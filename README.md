@@ -50,3 +50,4 @@ page.server.ts and page.ts serves very different PURPOSE!
 - [Deploying in GitHub](https://gotofritz.net/blog/how-to-build-blog-with-sveltekit-markdown-tailwind)
 - [Adding dependencies easily using svelte-add](https://github.com/svelte-add/svelte-add)
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/
+- [Changing deploying branch in GitHub Settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
