@@ -53,3 +53,4 @@ page.server.ts and page.ts serves very different PURPOSE!
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/
 - [Changing deploying branch in GitHub Settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [Configuration for Tailwindcss](https://tailwindcss.com/docs/guides/sveltekit)
+- [Flowbit styling](https://flowbite.com/docs/components/footer/)
