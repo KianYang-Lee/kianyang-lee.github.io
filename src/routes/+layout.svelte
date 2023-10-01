@@ -2,7 +2,7 @@
 	import '../app.css';
 </script>
 
-<header class="sticky top-0 z-40 flex-none w-full mx-auto bg-teal-400 border-b border-gray-200">
+<header class="sticky top-0 z-40 flex-none w-full mx-aut border-b border-gray-200">
 	<div class="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl lg:px-4">
 		<nav class="flex items-center justify-between flex-wrap  p-6">
 			<div class="h-8 mr-3 w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -74,11 +74,11 @@
 	</div>
 </header>
 <!-- Content -->
-<div class="bg-red-100 w-full px-4 max-w-7xl mx-auto">
+<div class="w-full px-4 max-w-7xl mx-auto">
 	<div class="lg:flex" id="nav-and-content-container">
 		<aside
 			id="sidebar"
-			class="fixed inset-0 z-20 flex-none hidden w-72 bg-green-400 lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-48 lg:block"
+			class="fixed inset-0 z-20 flex-none hidden w-72 lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-48 lg:block"
 		>
 			<div
 				id="nav-wrapper"
@@ -99,18 +99,17 @@
 		>
 			<div class="flex w-full">
 				<div
-					class="flex-auto max-w-4xl min-w-0 pt-6 bg-red-200 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 "
+					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 "
 				>
 					<slot />
 				</div>
-				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block xl:bg-gray-500">
-					On this page
+				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block">
 				</div>
 			</div>
 		</main>
 	</div>
 </div>
-<footer class="py-12 bg-yellow-200 h-12">
+<footer class="py-12 h-12">
 	<p class="text-center">© Kian Yang Lee (2023)</p>
 </footer>
 <!-- <footer class="fixed bottom-0 left-0 w-full bg-yellow-200 max-w-4xl ml-auto mr-auto h-16">Copyright by Kian Yang Lee</footer> -->
