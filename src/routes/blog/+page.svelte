@@ -21,11 +21,11 @@ from
 	>Pixabay</a
 > -->
 
-<!-- <ul>
+<ul>
   <li>
-    <a href="/blog/first">first</a>
+    <a href="/blog/first" class="text-white">first</a>
   </li>
-  <li>
+  <!-- <li>
     <a href="/blog/second">second</a>
-  </li>
-</ul> -->
+  </li> -->
+</ul>
