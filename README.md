@@ -54,3 +54,4 @@ page.server.ts and page.ts serves very different PURPOSE!
 - [Changing deploying branch in GitHub Settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [Configuration for Tailwindcss](https://tailwindcss.com/docs/guides/sveltekit)
 - [Flowbit styling](https://flowbite.com/docs/components/footer/)
+- [Make Use of Components in Svelte](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_components)
