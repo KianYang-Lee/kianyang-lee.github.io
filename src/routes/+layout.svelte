@@ -1,16 +1,21 @@
 <script>
 	import '../app.css';
+	import Hamburger from '$lib/components/Hamburger.svelte';
+	import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
 </script>
 
-<header class="sticky top-0 z-40 flex-none w-full mx-aut border-b border-gray-200">
+<header class="sticky top-0 z-40 flex-none w-full mx-aut border-b border-gray-200 bg-white">
 	<div class="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl lg:px-4">
 		<nav class="flex items-center justify-between flex-wrap  p-6">
-			<div class="h-8 mr-3 w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-				<div class="text-sm font-medium lg:flex-grow">
+			<div class="h-8 mr-3 w-full flex-grow lg:flex lg:items-center lg:w-auto">
+				<Hamburger />
+				<!-- <div class="hidden text-sm font-medium lg:flex-grow lg:block">
 					<a href="/" class="block mt-4 lg:inline-block lg:mt-2 hover:text-white mr-12	">Home</a>
 					<a href="/blog" class="block mt-4 lg:inline-block lg:mt-2 hover:text-white mr-12">Blog</a>
-					<a href="/portfolio" class="block lg:inline-block lg:mt-2 mt-4 hover:text-white">Portfolio</a>
-				</div>
+					<a href="/portfolio" class="block lg:inline-block lg:mt-2 mt-4 hover:text-white"
+						>Portfolio</a
+					>
+				</div> -->
 			</div>
 		</nav>
 		<div class="flex items-center">
@@ -18,7 +23,7 @@
 				href="https://www.linkedin.com/in/kian-yang-lee/"
 				target="_blank"
 				rel="noreferrer"
-				class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
 				<svg
 					class="w-6 h-6 text-blue-700 fill-current"
@@ -35,14 +40,11 @@
 				href="https://medium.com/@kianyang_lee"
 				target="_blank"
 				rel="noreferrer"
-				class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					x="0px"
-					y="0px"
-					width="100"
-					height="100"
+
 					viewBox="0 0 50 50"
 				>
 					<path
@@ -53,7 +55,9 @@
 			</a>
 			<a
 				href="https://github.com/KianYang-Lee"
-				class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				target="_blank"
+				rel="noreferrer"
+				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
 				<svg
 					class="w-6 h-6 text-black "
@@ -70,6 +74,7 @@
 				</svg>
 				<span class="sr-only">View Github profile</span>
 			</a>
+			<DarkModeToggle />
 		</div>
 	</div>
 </header>
@@ -82,13 +87,22 @@
 		>
 			<div
 				id="nav-wrapper"
-				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0"
+				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white"
 			>
 				<nav
-					class="pt-16 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20"
+					class="pt-20 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20"
 				>
-					<ul class="mb-0 list-none">
-						<!-- Navigation list -->
+					<!-- Navigation list -->
+					<ul class="mt-8 mb-0 list-none">
+						<li class="mt-8">
+							<a href="/" class="mb-2 text-sm font-semibold">Home</a>
+						</li>
+						<li class="mt-8">
+							<a href="/blog" class="mb-2 text-sm font-semibold">Blog</a>
+						</li>
+						<li class="mt-8">
+							<a href="/portfolio" class="mb-2 text-sm font-semibold">Portfolio</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -99,12 +113,11 @@
 		>
 			<div class="flex w-full">
 				<div
-					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 "
+					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 dark:bg-teal-400"
 				>
 					<slot />
 				</div>
-				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block">
-				</div>
+				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block" />
 			</div>
 		</main>
 	</div>
