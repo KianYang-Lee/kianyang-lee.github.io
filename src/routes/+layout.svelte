@@ -2,9 +2,12 @@
 	import '../app.css';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
-<header class="sticky top-0 z-40 flex-none w-full mx-aut border-b border-gray-200 bg-white">
+<header
+	class="sticky top-0 z-40 flex-none w-full mx-aut border-b border-gray-200 bg-white dark:bg-gray-700"
+>
 	<div class="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl lg:px-4">
 		<nav class="flex items-center justify-between flex-wrap  p-6">
 			<div class="h-8 mr-3 w-full flex-grow lg:flex lg:items-center lg:w-auto">
@@ -23,10 +26,10 @@
 				href="https://www.linkedin.com/in/kian-yang-lee/"
 				target="_blank"
 				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				class="sm:inline-flex items-center justify-center w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
 				<svg
-					class="w-6 h-6 text-blue-700 fill-current"
+					class="w-6 h-6 text-blue-700 fill-current dark:text-zinc-50"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
 				>
@@ -40,13 +43,9 @@
 				href="https://medium.com/@kianyang_lee"
 				target="_blank"
 				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				class="sm:inline-flex items-center justify-center w-10 h-10 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-
-					viewBox="0 0 50 50"
-				>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="dark:text-zinc-50 fill-current">
 					<path
 						d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"
 					/>
@@ -57,10 +56,10 @@
 				href="https://github.com/KianYang-Lee"
 				target="_blank"
 				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+				class="sm:inline-flex items-center justify-center  w-10 h-10  hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
 			>
 				<svg
-					class="w-6 h-6 text-black "
+					class="w-6 h-6 text-black fill-current dark:text-zinc-50"
 					aria-hidden="true"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="currentColor"
@@ -79,7 +78,7 @@
 	</div>
 </header>
 <!-- Content -->
-<div class="w-full px-4 max-w-7xl mx-auto">
+<div class="w-full px-4 max-w-7xl mx-auto ">
 	<div class="lg:flex" id="nav-and-content-container">
 		<aside
 			id="sidebar"
@@ -87,24 +86,9 @@
 		>
 			<div
 				id="nav-wrapper"
-				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white"
+				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white dark:bg-gray-900"
 			>
-				<nav
-					class="pt-20 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20"
-				>
-					<!-- Navigation list -->
-					<ul class="mt-8 mb-0 list-none">
-						<li class="mt-8">
-							<a href="/" class="mb-2 text-sm font-semibold">Home</a>
-						</li>
-						<li class="mt-8">
-							<a href="/blog" class="mb-2 text-sm font-semibold">Blog</a>
-						</li>
-						<li class="mt-8">
-							<a href="/portfolio" class="mb-2 text-sm font-semibold">Portfolio</a>
-						</li>
-					</ul>
-				</nav>
+				<Navbar />
 			</div>
 		</aside>
 		<main
@@ -113,7 +97,7 @@
 		>
 			<div class="flex w-full">
 				<div
-					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 dark:bg-blue-600"
+					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 "
 				>
 					<slot />
 				</div>

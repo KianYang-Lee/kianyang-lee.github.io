@@ -24,7 +24,7 @@
 	}
 
 	const toggleDarkModeByTheme = (theme: string) => {
-		theme === 'dark' ? document.body.classList.add('dark') : document.body.classList.remove('dark');
+		theme === 'dark' ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
 	};
 </script>
 
@@ -46,7 +46,7 @@
 	{:else if theme === 'dark'}
 		<svg
 			id="theme-toggle-light-icon"
-			class="w-4 h-4"
+			class="w-4 h-4 dark:text-zinc-50"
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
