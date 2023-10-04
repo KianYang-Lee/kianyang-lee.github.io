@@ -1,4 +1,3 @@
-// import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import {mdsvex} from 'mdsvex';
@@ -11,7 +10,10 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		paths: {
+			base: process.env.NODE_ENV === 'dev' ? '' : process.env.BASE_PATH,
+		}
 	},
 	extensions: ['.svelte', ...mdsvexConfig.extensions]
 };
