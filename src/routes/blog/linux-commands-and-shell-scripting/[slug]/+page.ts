@@ -1,7 +1,7 @@
 /** @type {import('./$types').PageLoad} */
 const slugFromPath = (path: string) => path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
 export async function load({ params }: any) {
-	const modules = import.meta.glob('/src/blog-posts/*.md');
+	const modules = import.meta.glob('/src/posts/**/*.md');
 	let match: any = {};
 
 	for (const [path, resolver] of Object.entries(modules)) {

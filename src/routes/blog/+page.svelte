@@ -11,9 +11,6 @@ let title = capitalizePathname(data.url.pathname)
 
 <ul>
   <li>
-    <a href="/blog/first" class="text-white dark:text-gray-900">first</a>
+    <a href="/blog/linux-commands-and-shell-scripting/1-writing-your-first-shell-script" class="dark:text-zinc-50">Shell Script</a>
   </li>
-  <!-- <li>
-    <a href="/blog/second">second</a>
-  </li> -->
 </ul>

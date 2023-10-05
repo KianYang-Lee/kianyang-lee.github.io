@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
@@ -109,4 +109,3 @@
 <footer class="py-12 h-12">
 	<p class="text-center">© Kian Yang Lee (2023)</p>
 </footer>
-<!-- <footer class="fixed bottom-0 left-0 w-full bg-yellow-200 max-w-4xl ml-auto mr-auto h-16">Copyright by Kian Yang Lee</footer> -->

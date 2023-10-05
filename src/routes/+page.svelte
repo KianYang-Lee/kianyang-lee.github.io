@@ -1,8 +1,13 @@
 <script lang="ts">
 	import profilePhoto from '$lib/assets/profile-photo.jpg';
 </script>
+
 <h1 class="text-center mb-10">Kian Yang Lee's Personal Blog</h1>
-<img src={profilePhoto} alt="Headshot of Lee Kian Yang" class="rounded-full w-64 self-center object-center bg-center ml-auto mr-auto mb-10">
+<img
+	src={profilePhoto}
+	alt="Headshot of Lee Kian Yang"
+	class="rounded-full w-64 self-center object-center bg-center ml-auto mr-auto mb-10"
+/>
 
 <p>
 	I'm a web app developer that lives in Malaysia that likes sports and outdoor activities. Also
@@ -20,3 +25,4 @@
 	Aside from development work, I blog on various topics, including how to build something using
 	different languages. You can find some of my most recent blogs below.
 </p>
+<p>Thanks</p>
