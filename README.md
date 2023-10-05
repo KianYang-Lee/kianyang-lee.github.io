@@ -1,44 +1,7 @@
-# create-svelte
+# Personal Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-# TITLE
-A personal blog built using Svelte
+## Status
+![Deploy to GitHub Pages](https://github.com/KianYang-Lee/kianyang-lee.github.io/actions/workflows/deploy.yml/badge.svg)
 
 ## Notes
 page.server.ts and page.ts serves very different PURPOSE!
@@ -56,6 +19,7 @@ REF: https://kit.svelte.dev/docs/seo
 ## Deploying to Github Page
 REF: [How to set dev environment only during development](https://stackoverflow.com/questions/70339952/sveltekit-app-cannot-be-found-in-svelte-config-js)
 REF: [Set up project for GitHub pages](https://kit.svelte.dev/docs/adapter-static)
+REF: [On successful deployment using Github Actions](https://github.com/Penca53/my-portfolio/)
 
 ## References
 - [Deploying in GitHub](https://gotofritz.net/blog/how-to-build-blog-with-sveltekit-markdown-tailwind)
