@@ -1,6 +1,5 @@
 # Personal Website
 
-## Status
 ![Deploy to GitHub Pages](https://github.com/KianYang-Lee/kianyang-lee.github.io/actions/workflows/deploy.yml/badge.svg)
 
 ## Notes
@@ -8,7 +7,9 @@ page.server.ts and page.ts serves very different PURPOSE!
 
 ## Library
 - `mdsvex`: to build markdown in Svelte project
-- `tailwindcss`: for styling. Refer here for configuration https://tailwindcss.com/docs/guides/sveltekit
+- `@tailwindcss`: for styling. Refer here for configuration https://tailwindcss.com/docs/guides/sveltekit
+- `@tailwindcss/typography`: for styling text tags
+- `svelte-sitemap`: to generate `sitemap.xml` after build
 
 ## SEO
 - To ensure `robots.txt` is included in build stage, place it under `\static` folder.
@@ -30,3 +31,4 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 - [Flowbit styling](https://flowbite.com/docs/components/footer/)
 - [Make Use of Components in Svelte](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_components)
 - [Chriskyfung's Blog](https://chriskyfung.github.io)
+- [Markdown Style Guide](https://www.markdownguide.org/basic-syntax/)
