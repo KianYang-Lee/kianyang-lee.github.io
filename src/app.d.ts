@@ -7,7 +7,7 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 	interface MdsvexFile {
-		default: import('svelte/internal').SvelteComponent;
+		default: typeof import('svelte/internal').SvelteComponentTyped;
 		metadata: Record<string, string>;
 	}
 
@@ -17,5 +17,10 @@ declare namespace App {
 		slug: string,
 		title: string,
 		content: string
+	}
+
+	interface MdsvexModuleEntry {
+		path: string;
+		resolver: App.MdsvexResolver;
 	}
 }

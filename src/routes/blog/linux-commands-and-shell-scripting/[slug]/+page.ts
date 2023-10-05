@@ -1,8 +1,9 @@
-/** @type {import('./$types').PageLoad} */
 const slugFromPath = (path: string) => path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
-export async function load({ params }: any) {
-	const modules = import.meta.glob('/src/posts/**/*.md');
-	let match: any = {};
+
+export async function load({ params }) {
+	const modules = import.meta.glob<App.MdsvexFile>('/src/posts/**/*.md');
+
+	let match = {} as App.MdsvexModuleEntry;
 
 	for (const [path, resolver] of Object.entries(modules)) {
 		if (slugFromPath(path) === params.slug) {
