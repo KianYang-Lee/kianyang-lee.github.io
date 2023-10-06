@@ -3,6 +3,7 @@
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 </script>
 
 <header
@@ -22,12 +23,7 @@
 			</div>
 		</nav>
 		<div class="flex items-center">
-			<a
-				href="https://www.linkedin.com/in/kian-yang-lee/"
-				target="_blank"
-				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-			>
+			<Icon url="https://www.linkedin.com/in/kian-yang-lee/" tooltipData="View LinkedIn profile">
 				<svg
 					class="w-6 h-6 text-blue-700 fill-current dark:text-zinc-50"
 					xmlns="http://www.w3.org/2000/svg"
@@ -37,27 +33,19 @@
 						d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
 					/>
 				</svg>
-				<span class="sr-only">View LinkedIn profile</span>
-			</a>
-			<a
-				href="https://medium.com/@kianyang_lee"
-				target="_blank"
-				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center w-10 h-10 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-			>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="dark:text-zinc-50 fill-current">
+			</Icon>
+			<Icon url="https://medium.com/@kianyang_lee" tooltipData="View Medium profile">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 50 50"
+					class="dark:text-zinc-50 fill-current"
+				>
 					<path
 						d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"
 					/>
 				</svg>
-				<span class="sr-only">View Medium profile</span>
-			</a>
-			<a
-				href="https://github.com/KianYang-Lee"
-				target="_blank"
-				rel="noreferrer"
-				class="sm:inline-flex items-center justify-center  w-10 h-10  hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-			>
+			</Icon>
+			<Icon url="https://github.com/KianYang-Lee" tooltipData="View Github profile">
 				<svg
 					class="w-6 h-6 text-black fill-current dark:text-zinc-50"
 					aria-hidden="true"
@@ -71,8 +59,7 @@
 						clip-rule="evenodd"
 					/>
 				</svg>
-				<span class="sr-only">View Github profile</span>
-			</a>
+			</Icon>
 			<DarkModeToggle />
 		</div>
 	</div>
@@ -96,9 +83,7 @@
 			class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible"
 		>
 			<div class="flex w-full">
-				<div
-					class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 "
-				>
+				<div class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 ">
 					<slot />
 				</div>
 				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block" />
