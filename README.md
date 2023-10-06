@@ -18,12 +18,16 @@ REF: https://stackoverflow.com/questions/72188193/whats-the-best-way-to-add-a-ro
 REF: https://kit.svelte.dev/docs/seo
 
 ## Deploying to Github Page
+Originally, I used `deploy.sh` script following [How to Build Blog with Sveltekit, Markdown and Tailwind](https://gotofritz.net/blog/how-to-build-blog-with-sveltekit-markdown-tailwind) to deploy build files manually. However, it become obsolete after I use Github Actions to perform deployment.
+
 REF: [How to set dev environment only during development](https://stackoverflow.com/questions/70339952/sveltekit-app-cannot-be-found-in-svelte-config-js)
 REF: [Set up project for GitHub pages](https://kit.svelte.dev/docs/adapter-static)
 REF: [On successful deployment using Github Actions](https://github.com/Penca53/my-portfolio/)
 
+## Svelte
+- We can specify classes with Javascript attribute (add/remove class programmatically) - https://learn.svelte.dev/tutorial/classes
+
 ## References
-- [Deploying in GitHub](https://gotofritz.net/blog/how-to-build-blog-with-sveltekit-markdown-tailwind)
 - [Adding dependencies easily using svelte-add](https://github.com/svelte-add/svelte-add)
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/
 - [Changing deploying branch in GitHub Settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
