@@ -27,6 +27,9 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 ## Svelte
 - We can specify classes with Javascript attribute (add/remove class programmatically) - https://learn.svelte.dev/tutorial/classes
 
+## CSS
+- [Tooltip](https://benborgers.com/posts/tailwind-tooltip)
+
 ## References
 - [Adding dependencies easily using svelte-add](https://github.com/svelte-add/svelte-add)
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/
