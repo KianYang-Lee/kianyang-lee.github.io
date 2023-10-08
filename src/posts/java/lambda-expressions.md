@@ -2,8 +2,11 @@
 title: 'Java Lambda Expressions'
 description: "Describes what is Java lambda expression, why we use it and how to use it."
 author: 'Kian Yang Lee'
-date: '2023-10-07'
 published: false
+datePublished: '2023-10-17'
+lastUpdated: ''
+categories: 'java'
+tags: 'java'
 ---
 
 ## What is Lambda Expressions
