@@ -8,17 +8,22 @@ declare namespace App {
 	// interface Platform {}
 	interface MdsvexFile {
 		default: typeof import('svelte/internal').SvelteComponentTyped;
-		metadata: Record<string, string>;
+		metadata: PostMetadata;
+	}
+	
+	interface PostMetadata {
+		title: string;
+		description: string;
+		published: boolean;
+		author: string;
+		datePublished: Date;
+		lastUpdated: Date;
+		categories: string
+		tags: string
 	}
 
 	type MdsvexResolver = () => Promise<MdsvexFile>;
 	
-	interface BlogPost {
-		slug: string,
-		title: string,
-		content: string
-	}
-
 	interface MdsvexModuleEntry {
 		path: string;
 		resolver: App.MdsvexResolver;

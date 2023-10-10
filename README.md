@@ -30,6 +30,10 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 ## CSS
 - [Tooltip](https://benborgers.com/posts/tailwind-tooltip)
 
+## Markdown
+- Library `mdsvex` is used to render markdown, refer https://rodneylab.com/sveltekit-tutorial-mdsvex-blog-site/
+REF: https://github.com/mvasigh/sveltekit-mdsvex-blog
+
 ## References
 - [Adding dependencies easily using svelte-add](https://github.com/svelte-add/svelte-add)
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/
