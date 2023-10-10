@@ -5,10 +5,8 @@
 	import { getBlogEntry } from '$lib/common';
 
 	export let data: PageData;
-
-	const { metadata, default: component } = getBlogEntry(data.resolvedEntries, data.url.pathname)
+	$: ({ metadata, default: component } = getBlogEntry(data.resolvedEntries, data.params));
 </script>
 
-<Head {metadata}/>
-<Article {metadata} {component}/>
-
+<Head {metadata} />
+<Article {metadata} {component} />
