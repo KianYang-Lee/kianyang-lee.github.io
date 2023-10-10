@@ -1,9 +1,12 @@
 ---
-title: '1. Writing Your First Shell Script'
-description: "Des."
+title: 'Writing Your First Shell Script'
+description: "Simple guide to get you started on writing your first shell script"
 author: 'Kian Yang Lee'
-date: '2023-10-05'
+datePublished: '2023-10-05'
 published: true
+lastUpdated: ''
+categories: 'linux'
+tags: 'linux, shell script'
 ---
 
 ## What is a Shell Script?
