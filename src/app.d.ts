@@ -10,7 +10,7 @@ declare namespace App {
 		default: typeof import('svelte/internal').SvelteComponentTyped;
 		metadata: PostMetadata;
 	}
-	
+
 	interface PostMetadata {
 		title: string;
 		description: string;
@@ -18,14 +18,27 @@ declare namespace App {
 		author: string;
 		datePublished: Date;
 		lastUpdated: Date;
-		categories: string
-		tags: string
+		categories: string;
+		tags: string;
 	}
 
 	type MdsvexResolver = () => Promise<MdsvexFile>;
-	
+
 	interface MdsvexModuleEntry {
 		path: string;
 		resolver: App.MdsvexResolver;
+	}
+
+	interface Route {
+		name: string;
+		path: string;
+		hasChildren: boolean;
+		children?: Post[];
+	}
+
+	interface Post {
+		path: string;
+		component: MdsvexFile;
+		name: string;
 	}
 }

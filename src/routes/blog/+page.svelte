@@ -7,7 +7,7 @@
 	<ul>
 		{#each data.resolvedEntries as post}
 			<li>
-				<a href={post[0]}>{post[1].metadata.title}</a>
+				<a href={post.path}>{post.name}</a>
 			</li>
 		{/each}
 	</ul>

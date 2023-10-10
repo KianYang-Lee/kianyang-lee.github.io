@@ -4,6 +4,9 @@
 	import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
 <header
@@ -75,7 +78,7 @@
 				id="nav-wrapper"
 				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white dark:bg-gray-900"
 			>
-				<Navbar />
+				<Navbar resolvedPosts={data.resolvedEntries} />
 			</div>
 		</aside>
 		<main
