@@ -1,3 +1,3 @@
-export function load({ params }) {
-	return { params };
+export function load({ params, url }) {
+	return { params, url };
 }
