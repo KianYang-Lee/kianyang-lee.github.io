@@ -13,6 +13,8 @@ page.server.ts and page.ts serves very different PURPOSE!
 
 ## SEO
 - To ensure `robots.txt` is included in build stage, place it under `\static` folder.
+- Include canonical link for SEO [How to specify a canonical with rel="canonical" and other methods
+](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
 
 REF: https://stackoverflow.com/questions/72188193/whats-the-best-way-to-add-a-robots-txt-file-to-a-sveltekit-project
 REF: https://kit.svelte.dev/docs/seo
@@ -26,6 +28,7 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 
 ## Svelte
 - We can specify classes with Javascript attribute (add/remove class programmatically) - https://learn.svelte.dev/tutorial/classes
+- Adding error page for SSR - [Add a straightforward way to export error pages with adapter-static #1209](https://github.com/sveltejs/kit/issues/1209)
 
 ## CSS
 - [Tooltip](https://benborgers.com/posts/tailwind-tooltip)

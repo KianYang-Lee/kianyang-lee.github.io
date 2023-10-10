@@ -13,3 +13,5 @@
 - Check why window is not defined: Window is not defined during initial life phase of Svelte
 - Made header to size correctly and not have transparent background.
 - Added robots.txt and sitemap.xml
+- Added error page
+- Added mechanism to handle expected error where blog posts do not exist in markdowns
