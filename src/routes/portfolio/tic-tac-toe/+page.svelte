@@ -1,4 +1,10 @@
 <script lang="ts">
+	
+	import SEO from "$lib/components/SEO.svelte";
+	import type { PageData } from "./$types";
+	export let data: PageData
+	const title = "Tic-Tac-Toe"
+	const description = "Tic-Tac-Toe project built using pure Javascript, HTML and CSS"
 	const lines = [
 		[0, 1, 2],
 		[3, 4, 5],
@@ -36,9 +42,9 @@
 		winningLine = [];
 	}
 </script>
-
+<SEO {title} url={data.url} {description}/>
 <div class="contents">
-	<h1 class="mb-6 text-center">Tic-Tac-Toe</h1>
+	<h1 class="mb-6 text-center">{title}</h1>
 	<div id="container" class="flex items-center justify-center flex-col h-full">
 		<div
 			id="board"

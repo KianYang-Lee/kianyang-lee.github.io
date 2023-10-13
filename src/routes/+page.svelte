@@ -1,8 +1,15 @@
 <script lang="ts">
 	import profilePhoto from '$lib/assets/profile-photo.jpg';
+	import SEO from '$lib/components/SEO.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData
+	const title = 'Kian Yang Lee\'s Personal Site'
+	const description = 'Kian Yang Lee\'s personal site to showcase his blog posts, portfolio and services which he provide.'
 </script>
 
-<h1 class="text-center mb-10">Kian Yang Lee's Personal Blog</h1>
+<SEO url={data.url} {title} {description}/>
+<h1 class="text-center mb-10">Kian Yang Lee's Personal Site</h1>
 <img
 	src={profilePhoto}
 	alt="Headshot of Lee Kian Yang"
