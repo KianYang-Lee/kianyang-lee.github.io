@@ -1,9 +1,10 @@
 <script lang="ts">
-	export let resolvedPosts: App.Post[];
+	export let posts: App.Post[];
+	export let portfolio: App.Project[];
 	let routes: App.Route[] = [
 		{ name: 'Home', path: '/', hasChildren: false },
-		{ name: 'Blog', path: '/blog', hasChildren: true, children: resolvedPosts },
-		{ name: 'Portfolio', path: '/portfolio', hasChildren: false }
+		{ name: 'Blog', path: '/blog', hasChildren: true, children: posts },
+		{ name: 'Portfolio', path: '/portfolio', hasChildren: true, children: portfolio }
 	];
 </script>
 

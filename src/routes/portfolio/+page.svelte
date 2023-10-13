@@ -1,7 +1,14 @@
 <script lang="ts">
 	import type { PageData } from '../portfolio/$types';
-	import PageInProgress from '$lib/components/PageInProgress.svelte';
 	export let data: PageData;
 </script>
 
-<PageInProgress title={data.url.pathname} />
+<nav>
+	<ul class="list-disc my-5 pl-7">
+		{#each data.portfolio as project (project.name)}
+			<li class="">
+				<a class="underline font-medium dark:text-zinc-50" href={project.path}>{project.name}</a>
+			</li>
+		{/each}
+	</ul>
+</nav>

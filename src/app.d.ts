@@ -33,12 +33,17 @@ declare namespace App {
 		name: string;
 		path: string;
 		hasChildren: boolean;
-		children?: Post[];
+		children?: Post[] | Project[];
 	}
 
 	interface Post {
 		path: string;
 		component: MdsvexFile;
+		name: string;
+	}
+
+	interface Project {
+		path: string;
 		name: string;
 	}
 }

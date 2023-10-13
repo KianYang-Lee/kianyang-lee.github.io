@@ -11,6 +11,10 @@
     @apply text-xl font-semibold dark:text-zinc-50
   }
 
+  h3 {
+    @apply text-lg font-semibold dark:text-zinc-50
+  }
+
   p {
     @apply dark:text-zinc-50
   }

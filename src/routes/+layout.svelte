@@ -16,13 +16,6 @@
 		<nav class="flex items-center justify-between flex-wrap  p-6">
 			<div class="h-8 mr-3 w-full flex-grow lg:flex lg:items-center lg:w-auto">
 				<Hamburger />
-				<!-- <div class="hidden text-sm font-medium lg:flex-grow lg:block">
-					<a href="/" class="block mt-4 lg:inline-block lg:mt-2 hover:text-white mr-12	">Home</a>
-					<a href="/blog" class="block mt-4 lg:inline-block lg:mt-2 hover:text-white mr-12">Blog</a>
-					<a href="/portfolio" class="block lg:inline-block lg:mt-2 mt-4 hover:text-white"
-						>Portfolio</a
-					>
-				</div> -->
 			</div>
 		</nav>
 		<div class="flex items-center">
@@ -68,7 +61,7 @@
 	</div>
 </header>
 <!-- Content -->
-<div class="w-full px-4 max-w-7xl mx-auto ">
+<div class="w-full px-4 max-w-7xl mx-auto">
 	<div class="lg:flex" id="nav-and-content-container">
 		<aside
 			id="sidebar"
@@ -78,7 +71,7 @@
 				id="nav-wrapper"
 				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white dark:bg-gray-900"
 			>
-				<Navbar resolvedPosts={data.resolvedEntries} />
+				<Navbar posts={data.resolvedEntries} portfolio={data.portfolio}/>
 			</div>
 		</aside>
 		<main
@@ -86,7 +79,7 @@
 			class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible"
 		>
 			<div class="flex w-full">
-				<div class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16 ">
+				<div class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb-12 xl:pb-24 lg:pb-16">
 					<slot />
 				</div>
 				<div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block" />

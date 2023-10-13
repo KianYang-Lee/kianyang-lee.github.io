@@ -1,12 +1,12 @@
 export const prerender = true; // server-side rendering
 
 export async function load({ url }) {
-	const modules = import.meta.glob<App.MdsvexFile>('/src/posts/**/*.md');
+	const postModules = import.meta.glob<App.MdsvexFile>('/src/posts/**/*.md');
 
 	let resolvedEntries = [] as App.Post[];
 
 	await Promise.all(
-		Object.entries(modules).map(async (entry) => {
+		Object.entries(postModules).map(async (entry) => {
 			const fullPathSplitted = entry[0].split('/');
 			const filename = fullPathSplitted.pop();
 			if (!filename) {
@@ -32,8 +32,11 @@ export async function load({ url }) {
 		})
 	);
 
+	const portfolio: App.Project[] = [{ name: 'Tic-Tac-Toe', path: '/portfolio/tic-tac-toe' }];
+
 	return {
 		url,
-		resolvedEntries
+		resolvedEntries,
+		portfolio
 	};
 }

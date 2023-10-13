@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData, RouteParams } from './$types';
+	import type { PageData } from './$types';
 	import Article from '$lib/components/Article.svelte';
 	import Head from '$lib/components/Head.svelte';
 
