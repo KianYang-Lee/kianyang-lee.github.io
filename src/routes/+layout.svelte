@@ -71,7 +71,7 @@
 				id="nav-wrapper"
 				class="overflow-y-auto z-20 max-h-screen max-w-2xs lg:block lg:sticky top-24 lg:top-28 lg:mr-0 bg-white dark:bg-gray-900"
 			>
-				<Navbar posts={data.resolvedEntries} portfolio={data.portfolio}/>
+				<Navbar posts={data.resolvedEntries} portfolio={data.portfolio} />
 			</div>
 		</aside>
 		<main

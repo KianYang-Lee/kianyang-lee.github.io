@@ -29,6 +29,7 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 ## Svelte
 - We can specify classes with Javascript attribute (add/remove class programmatically) - https://learn.svelte.dev/tutorial/classes
 - Adding error page for SSR - [Add a straightforward way to export error pages with adapter-static #1209](https://github.com/sveltejs/kit/issues/1209)
+- `Todo-list` project uses a specific type of two-way communication, namely **props-down, events-up pattern** (parent pass down the properly to children and children despatch an event back to parent). To add full type safety for `createDespatchEvent` function, refer here [Svelte Event Parameter Type for Typescript](https://stackoverflow.com/questions/64087782/svelte-event-parameter-type-for-typescript)
 
 ## CSS
 - [Tooltip](https://benborgers.com/posts/tailwind-tooltip)
@@ -37,6 +38,12 @@ REF: [On successful deployment using Github Actions](https://github.com/Penca53/
 - Library `mdsvex` is used to render markdown, refer https://rodneylab.com/sveltekit-tutorial-mdsvex-blog-site/
 REF: https://github.com/mvasigh/sveltekit-mdsvex-blog
 
+## Typescript
+- The file `ambient.d.ts` enable us to use types defined here in all modules without the need to explicitly importing them.
+
+## Portfolio
+- [Tic-Tac-Toe]()
+- [To-do List](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_Todo_list_beginning)
 ## References
 - [Adding dependencies easily using svelte-add](https://github.com/svelte-add/svelte-add)
 - https://cloudcannon.com/community/learn/sveltekit-beginner-tutorial/blogging-in-sveltekit/

@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl font-bold dark:text-zinc-50
-  }
+	h1 {
+		@apply text-2xl font-bold dark:text-zinc-50;
+	}
 
-  h2 {
-    @apply text-xl font-semibold dark:text-zinc-50
-  }
+	h2 {
+		@apply text-xl font-semibold dark:text-zinc-50;
+	}
 
-  h3 {
-    @apply text-lg font-semibold dark:text-zinc-50
-  }
+	h3 {
+		@apply text-lg font-semibold dark:text-zinc-50;
+	}
 
-  p {
-    @apply dark:text-zinc-50
-  }
+	p {
+		@apply dark:text-zinc-50;
+	}
+
+	*:focus {
+		@apply border-orange-500 border-dashed bg-red-300;
+	}
 }

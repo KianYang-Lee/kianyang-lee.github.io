@@ -32,7 +32,10 @@ export async function load({ url }) {
 		})
 	);
 
-	const portfolio: App.Project[] = [{ name: 'Tic-Tac-Toe', path: '/portfolio/tic-tac-toe' }];
+	const portfolio: App.Project[] = [
+		{ name: 'Tic-Tac-Toe', path: '/portfolio/tic-tac-toe' },
+		{ name: 'To-do List', path: '/portfolio/to-do-list' }
+	];
 
 	return {
 		url,
