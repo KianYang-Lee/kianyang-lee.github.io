@@ -1,29 +1,14 @@
 <script lang="ts">
-	export let filter: string;
+	export let ariaPressed: boolean | 'false' | 'mixed' | 'true' | null | undefined;
 </script>
 
-<div class="filters btn-group stack-exception">
-	<button class="btn toggle-btn" aria-pressed={filter === 'all'} on:click={() => (filter = 'all')}>
-		<span class="visually-hidden">Show</span>
-		<span>All</span>
-		<span class="visually-hidden">tasks</span>
-	</button>
-	<button
-		class="btn toggle-btn"
-		aria-pressed={filter === 'active'}
-		on:click={() => (filter = 'active')}
-	>
-		<span class="visually-hidden">Show</span>
-		<span>Active</span>
-		<span class="visually-hidden">tasks</span>
-	</button>
-	<button
-		class="btn toggle-btn"
-		aria-pressed={filter === 'completed'}
-		on:click={() => (filter = 'completed')}
-	>
-		<span class="visually-hidden">Show</span>
-		<span>Completed</span>
-		<span class="visually-hidden">tasks</span>
-	</button>
-</div>
+<button
+	class="py-1 px-4 capitalize cursor-pointer border-solid border-2 border-red-900 flex-1 ml-3 first:ml-0 bg-orange-200"
+	class:bg-orange-400={ariaPressed}
+	class:underline={ariaPressed}
+	class:border-orange-400={ariaPressed}
+	on:click
+	aria-pressed={ariaPressed}
+>
+	<slot />
+</button>

@@ -1,11 +1,10 @@
 <script lang="ts">
-	import FilterButton from '$lib/components/todo-list/FilterButton.svelte';
 	import TodoComponent from '$lib/components/todo-list/Todo.svelte';
 	import type { SvelteComponent } from 'svelte';
-	import AllActions from './AllActions.svelte';
 	import NewTodo from './NewTodo.svelte';
 	import TodoStatus from './TodoStatus.svelte';
 	import { alert } from '$lib/store';
+	import Filter from './Filter.svelte';
 
 	let todosStatus: SvelteComponent;
 	export let todos: Todo[] = [];
@@ -13,13 +12,13 @@
 	$: {
 		switch (filter) {
 			case 'active':
-				$alert = 'Browsing active Todos';
+				$alert = 'Browsing active to-dos';
 				break;
 			case 'completed':
-				$alert = 'Browsing completed Todos';
+				$alert = 'Browsing completed to-dos';
 				break;
 			default:
-				$alert = 'Browsing all Todos';
+				$alert = 'Browsing all to-dos';
 				break;
 		}
 	}
@@ -66,15 +65,19 @@
 	};
 </script>
 
-<div class="todoapp stack-large">
-	<FilterButton bind:filter />
-
+<div class="p-16 mt-8 mb-16 shadow-2xl dark:shadow-blue-500	">
 	<NewTodo on:addTodo={(e) => addTodo(e.detail)} autofocus />
-	<TodoStatus {todos} bind:this={todosStatus} />
-	<ul>
-		{#each filterTodos(filter, todos) as todo (todo.id)}
+	<Filter bind:filter />
+	<TodoStatus {todos} bind:this={todosStatus} 
+	on:checkAll={(e) => checkAllTodos(e.detail)}
+	on:removeCompleted={removeCompletedTodos}
+	/>
+	<hr class="mt-8"/>
+	<ul class="mt-8">
+		{#each filterTodos(filter, todos) as todo, index (todo.id)}
 			<li>
 				<TodoComponent
+					index={index + 1}
 					{todo}
 					on:update={(event) => updateTodo(event.detail)}
 					on:remove={(event) => removeTodo(event.detail)}
@@ -83,10 +86,5 @@
 		{/each}
 	</ul>
 
-	<hr />
-	<AllActions
-		{todos}
-		on:checkAll={(e) => checkAllTodos(e.detail)}
-		on:removeCompleted={removeCompletedTodos}
-	/>
+
 </div>

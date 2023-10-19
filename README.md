@@ -41,6 +41,11 @@ REF: https://github.com/mvasigh/sveltekit-mdsvex-blog
 ## Typescript
 - The file `ambient.d.ts` enable us to use types defined here in all modules without the need to explicitly importing them.
 
+## Image handling
+- Responsive image handling guide refer to [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- [Responsive Images 101, Part 1: Definitions](https://cloudfour.com/thinks/responsive-images-101-definitions/)
+- How to identify containing block refer to [Layout and the containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block)
+
 ## Portfolio
 - [Tic-Tac-Toe]()
 - [To-do List](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_Todo_list_beginning)

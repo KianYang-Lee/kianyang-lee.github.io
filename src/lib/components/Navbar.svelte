@@ -10,7 +10,7 @@
 
 <!-- Navigation list -->
 <nav class="pt-20 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20">
-	<ul class="mt-8 mb-0 list-none">
+	<ul class="mt-8 mb-0 list-none pl-2">
 		<!-- route[0] is used as key for each row -->
 		{#each routes as route (route.name)}
 			<li class="mt-8">
