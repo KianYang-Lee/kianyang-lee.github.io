@@ -1,12 +1,13 @@
 ---
 title: 'Writing Your First Shell Script'
-description: "Simple guide to get you started on writing your first shell script"
+description: 'Simple guide to get you started on writing your first shell script'
 author: 'Kian Yang Lee'
 datePublished: '2023-10-05'
 published: true
-lastUpdated: ''
+lastUpdated: '2023-10-05'
 categories: 'linux'
 tags: 'linux, shell script'
+category: 'linux'
 ---
 
 ## What is a Shell Script?
@@ -81,7 +82,7 @@ This will take effect in the other new terminal sessions. To make it effective f
 . .bashrc
 ```
 
-This is called *sourcing* the `bashrc` file, kinda like a refresh in browser. Now we can run the script without explicit path:
+This is called _sourcing_ the `bashrc` file, kinda like a refresh in browser. Now we can run the script without explicit path:
 
 ```sh
 first_script.sh

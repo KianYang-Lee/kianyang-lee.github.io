@@ -1,11 +1,5 @@
-<script setup>
-const slug = useRoute().params.slug;
-const { data: post } = await useAsyncData(`blog-${slug}`, () => {
-  return queryCollection('blog').path(`/blog/${slug}`).first();
-});
-</script>
+<script setup></script>
 
 <template>
-  <!-- Render the blog post as Prose & Vue components -->
-  <ContentRenderer :value="post" />
+  <p>The following are the blog entries:</p>
 </template>

@@ -6,4 +6,6 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-2898RVF3GV',
   },
+  css: ['~/assets/css/main.css'],
+  ssr: true,
 });

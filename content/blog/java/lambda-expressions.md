@@ -1,17 +1,18 @@
 ---
 title: 'Java Lambda Expressions'
-description: "Describes what is Java lambda expression, why we use it and how to use it."
+description: 'Describes what is Java lambda expression, why we use it and how to use it.'
 author: 'Kian Yang Lee'
 published: false
 datePublished: '2023-10-17'
-lastUpdated: ''
+lastUpdated: '2023-10-17'
 categories: 'java'
 tags: 'java'
+category: 'java'
 ---
 
 ## What is Lambda Expressions
 
-Lambda expressions, or *lambdas* for short, are commonly used in functional programming. It was first introduced in Java 8.
+Lambda expressions, or _lambdas_ for short, are commonly used in functional programming. It was first introduced in Java 8.
 
 It allows for Java user to create instances of functional interface for one-time usage in a concise-manner.
 
@@ -55,7 +56,7 @@ i. Parameter(s) separated by comma and enclosed in parentheses, in this case `(s
 
 ii. Arrow token `->`
 
-iii. Body that is either a single expression or a statement block, in this case `Integer.compared(s1.length(), s2.length())`. For single expression, Java runtime will return whatever value that is left after evaluation. For statement block, you need to explicitly return a value. The following are the equivalent of  example using statement block as body:
+iii. Body that is either a single expression or a statement block, in this case `Integer.compared(s1.length(), s2.length())`. For single expression, Java runtime will return whatever value that is left after evaluation. For statement block, you need to explicitly return a value. The following are the equivalent of example using statement block as body:
 
 ```java
 (s1, s2) -> {
